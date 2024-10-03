@@ -1,0 +1,53 @@
+/** ========= Header 2 ========= **/
+@import url('https://fonts.googleapis.com/css2?family=Aladin&amp;display=swap');
+
+header{margin-bottom:-82px;}
+
+.h-navbar{padding:20px 0; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;}
+.navbar-brand img{max-width:195px;}
+.navbar-nav .nav-link{color:#fff;}
+.navbar-nav li.nav-item.search-btn a.nav-link{width:auto; height:auto; background-color:inherit; font-size:18px;}
+
+main{margin-top:0;}
+
+.home-slider{background:none; background-size:cover; padding:0; position:relative;}
+.full_slides{width:100%; height:680px; position:relative;}
+.full_slide_caption{margin-top:0; position:absolute; left:0; right:0; top:50%; transform:translate(0,-50%); margin:0 auto; max-width:1000px; text-align:center; color:#fff;}
+.slider-txt-medium{font-size:48px; line-height:48px; font-family: 'Aladin', cursive; margin-bottom:15px;}
+.slider-txt-big{font-size:60px; line-height:60px; text-transform:uppercase; font-weight:800; margin-bottom:20px;}
+.full_slide_caption p{font-size:14px; line-height:24px;}
+
+.owl-prev, .owl-next {width:45px; height:45px; line-height:45px; background-color:#fff !important; border-radius:3px; position: absolute; top: 50%;}
+.owl-prev span{font-size:0; background:url(../images/arrow-blue-left.png) no-repeat center center; width:23px; height:19px; display:inline-block; vertical-align:middle; background-size:contain;}
+.owl-next span{font-size:0; background:url(../images/arrow-blue-right.png) no-repeat center center; width:23px; height:19px; display:inline-block; vertical-align:middle; background-size:contain;}
+
+.inner-banner{width:100%; height:300px; padding:0; position:relative;}
+.inner-banner .inner-page-heading{position:absolute; bottom:35px; left:0; right:0; margin:0 auto;}
+.inner-banner .page-heading{font-size:55px; line-height:55px;}
+
+
+@media only screen and (max-width:991px) {
+.navbar-collapse{position:absolute; top:100%; right:0; background:#2a363f; width:100%; padding:20px 15px; margin-top:15px; border-top:none;}
+.navbar-nav li.nav-item{border-bottom:#505f6b 1px solid;}
+
+.full_slides{height:500px;}
+.full_slide_caption{top:55%;}
+.slider-txt-medium{font-size:30px; line-height:30px;}
+.slider-txt-big{font-size:40px; line-height:40px;}
+}
+@media only screen and (max-width:767px) {
+.full_slides{height:430px;}
+.slider-txt-medium{font-size:24px; line-height:24px;}
+.slider-txt-big{font-size:30px; line-height:30px;}
+
+.inner-banner{height:230px;}
+.inner-banner .inner-page-heading{bottom:15px;}
+.inner-banner .page-heading{font-size:1.875em;}
+}
+@media only screen and (max-width:640px) {
+.full_slide_caption{padding:0 15px;}
+}
+
+
+
+
