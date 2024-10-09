@@ -87,7 +87,7 @@ ul.list.list-white li:after{background:url(../images/arrow-white.png) no-repeat 
 /** ========= COLORS ========= **/
 :root{
   --main-bg-color:#e51400;
-  --main-txt-color:#e51400;
+  --main-txt-color:#e51400;;
   --main-border-color:#e51400;
 }
 .tex-white{color:#fff;}
@@ -507,7 +507,7 @@ pre{font-size:0.875em; color:#333; margin:0;}
 
 .dropdown-menu{left:auto; transform:inherit; top:auto; background-color:inherit; min-width:inherit; padding-bottom:0;}
 .navbar-nav .dropdown-menu:before{display:none;}
-.dropdown-item{color:#2a363f;}
+.dropdown-item{color:#fff;}
 
 .full_slide_caption{margin-top:0;}
 .slider-txt-big{font-size:30px; line-height:30px;}

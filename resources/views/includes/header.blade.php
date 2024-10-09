@@ -46,14 +46,16 @@
                         </div>
                       </li> --}}
                       <li class="nav-item"><a class="nav-link" href="{{url('/about')}}">About</a></li>
-                      <li class="nav-item"><a class="nav-link" href="{{url('/services')}}">Services</a></li>
+                      <li class="nav-item"><a class="nav-link" href="{{url('/join')}}">Membership</a></li>
                       {{-- <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li> --}}
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Scholarship</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Foundation Privileges</a>
                         <div class="dropdown-menu">
-                            {{-- <a class="dropdown-item" href="blog.html">Blog 1</a>
-                            <a class="dropdown-item" href="blog2.html">Blog 2</a>
-                            <a class="dropdown-item" href="blog-details.html">Blog Details</a> --}}
+                            <a class="dropdown-item" href="{{url('/feed')}}">Feeding program</a>
+                            <a class="dropdown-item" href="{{url('/scholars')}}">Scholarship program</a>
+                            <a class="dropdown-item" href="{{url('/sme')}}">Business empowerment</a>
+                            <a class="dropdown-item" href="{{url('/training')}}">Skill acquisition</a>
+                            <a class="dropdown-item" href="{{url('/farmers')}}">Small scale farmers</a>
                         </div>
                       </li>
                       <li class="nav-item"><a class="nav-link" href="{{url('/index')}}">Contact</a></li>

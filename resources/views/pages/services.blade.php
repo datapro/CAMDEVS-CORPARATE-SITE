@@ -146,7 +146,7 @@
      </div>
     </section>
     <!-- testimonials section -->
-    <section id="home-testimonials">
+    {{-- <section id="home-testimonials">
      <div class="section-inner">
       <div class="container">
        <div class="row">
@@ -202,6 +202,6 @@
        </div>
       </div>
      </div>
-    </section>
+    </section> --}}
 </main>
 @endsection
