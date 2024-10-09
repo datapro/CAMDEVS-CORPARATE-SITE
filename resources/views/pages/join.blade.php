@@ -45,20 +45,20 @@
         <div class="f-field"><input name="fname" type="text" required placeholder="First name"></div>
         <div class="f-field"><input name="sname" type="text" required placeholder="Last name"></div>
         <label for="">Age:</label>
-        <div class="f-field"><input name="age" type="date" required placeholder="Membership code" style="width:100px"></div>
+        <div class="f-field"><input name="age" type="date" required placeholder="Membership code" ></div>
         <div class="f-field"><input name="university" type="text" required placeholder="University Name or school completed"></div>
         <div class="f-field"><input name="nin" type="text" required placeholder="NIN"></div>
         <label for="">Are you a School Leaver , an undergraduate or even a graduate and you believe in
            improving on the democratic ideals by Reawakening the patriot.</label>
         <div>
-            <select name="school" id="">
+            <select name="school" id="" class="f-field">
                <option value="School Leaver">School Leaver</option>
                <option value="Undergraduate">Undergraduate</option>
             </select>
         </div>
         <label for="">Membership:</label>
          <div class="f-field">
-            <select name="membership" id="" >
+            <select name="membership" id="" class="f-field">
                 <option value="School Leaver">Full Membership</option>
                 <option value="Undergraduate">Volunteer</option>
                </select>
