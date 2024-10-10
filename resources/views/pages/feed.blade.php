@@ -39,17 +39,41 @@
        {{-- </div>   --}}
       {{-- </div> --}}
       <div class="row">
-       <div class="col-lg-6 mb-5 p-0">
-        <form class="contact-form">
-        <div class="f-field"><input name="passport" type="file" required ></div>
-        <div class="f-field"><input name="code" type="text" required placeholder="Membership code"></div>
-        <div class="f-field"><input name="fname" type="text" required placeholder="Full Name"></div>
-        <div class="f-field"><input name="address" type="text" required placeholder="Address with nearest bus stop"></div>
-        <div class="f-field"><input name="email" type="email" required placeholder="Email"></div>
-        <div class="f-field"><input name="phone" type="text" required placeholder="Phone"></div>
-        <div class="submit-btn"><input name="submit" type="submit" value="submit"></div>
-        </form>
-       </div>
+         <div class="col-lg-6 mb-5 p-0">
+            <form class="contact-form">
+             <div class="f-field"><label for="">Code number <strong>MEMBERSHIP is</strong> compulsory  <strong>for submission</strong></label></div>
+            <div class="f-field"><input name="code" type="text" required placeholder="Code number "></div>
+            <div class="f-field"><input name="fname" type="text" required placeholder="First name"></div>
+            <div class="f-field"><input name="sname" type="text" required placeholder="Last name"></div>
+            <label for="">Age:</label>
+            <div class="f-field"><input name="age" type="date" required placeholder="Membership code" ></div>
+            <div class="f-field"><input name="university" type="text" required placeholder="University Name or school completed"></div>
+            <div class="f-field"><input name="nin" type="text" required placeholder="NIN"></div>
+            <label for="">Are you a School Leaver , an undergraduate or even a graduate and you believe in
+               improving on the democratic ideals by Reawakening the patriot.</label>
+            <div>
+                <select name="school" id="" class="f-field">
+                   <option value="School Leaver">School Leaver</option>
+                   <option value="Undergraduate">Undergraduate</option>
+                </select>
+            </div>
+            <label for="">Membership:</label>
+             <div class="f-field">
+                <select name="membership" id="" class="f-field">
+                    <option value="School Leaver">Full Membership</option>
+                    <option value="Undergraduate">Volunteer</option>
+                   </select>
+             </div>
+            <div class="f-field"><input name="address" type="text" required placeholder="Address with nearest bus stop"></div>
+            <div class="f-field"><input name="email" type="email" required placeholder="Email"></div>
+            <div class="f-field"><input name="phone" type="text" required placeholder="Phone"></div>
+            <div class="f-field"><input name="state" type="text" required placeholder="State of oring"></div>
+            <div class="f-field"><input name="lga" type="text" required placeholder="LGA of origin"></div>
+            <div class="f-field"><input name="stater" type="text" required placeholder="state of residence"></div>
+            <div class="f-field"><input name="lgar" type="text" required placeholder="LGA of residence"></div>
+            <div class="submit-btn"><input name="submit" type="submit" value="submit"></div>
+            </form>
+         </div>
        <div class="col-lg-6 p-0">
         <div class="gmap"><img src="{{asset('assets/images/feeding.jpg')}}"></div>
        </div>

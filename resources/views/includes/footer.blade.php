@@ -37,7 +37,7 @@
           <ul class="footer-menu">
             <li><a href="{{url('/')}}">Home</a></li>
             <li><a href="{{url('/about')}}">About</a></li>
-            <li><a href="{{url('/member')}}">New Member</a></li>
+            <li><a href="{{url('/join')}}">New Member</a></li>
             <li><a href="{{url('/scholarship')}}">Scholarship</a></li>
             <li><a href="{{url('/index')}}">Contact</a></li>
             {{-- <li><a href="team.html">Team</a></li>
