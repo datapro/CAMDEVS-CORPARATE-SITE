@@ -54,7 +54,8 @@
           <p>Benin Office :<br> No 1, Reservation road, Oguola Press Center, GRA, Benin City</p>
           <p>Abuja Office : <br> Muhammad complex, Utako, Abuja</p>
           <p><strong>Phone:</strong> <a href="tel:+2347053506951">+2347053506951</a><br>
-            <strong>Email:</strong> <a href="#"><span class="__cf_email__" data-cfemail="442d2a222b043d2b3136282d2a2f376a272b29">Camdevspatroit@gmail.com</span></a></p>
+            <strong>Email:</strong> <a href="#"><span class="__cf_email__" data-cfemail="442d2a222b043d2b3136282d2a2f376a272b29">camdevspatroit@gmail.com</span></a><br>
+              <a href="#"><span class="__cf_email__" data-cfemail="442d2a222b043d2b3136282d2a2f376a272b29">admin@camdevsfoundation.com.ng</span></a></p>
           <ul class="footer-social clearfix">
             <li class="facebook"><a href="https://web.facebook.com/profile.php?id=100087651557657" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
             <li class="twitter"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>

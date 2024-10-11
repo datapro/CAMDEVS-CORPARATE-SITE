@@ -26,11 +26,18 @@ Route::post('/index', [ContactController::class, 'send'])->name('index');
 Route::post('/', [ContactController::class, 'subscribe'])->name('subscribe');
 
 Route::get('/join', [PageController::class, 'join']);
+// Route::post('/join', [PageController::class, 'join']);
+Route::post('/join', [PageController::class, 'joinsave']);
+Route::post('/feed', [PageController::class, 'feedsave']);
 Route::get('/feed', [PageController::class, 'feed']);
 Route::get('/scholars', [PageController::class, 'scholars']);
+Route::post('/scholars', [PageController::class, 'scholarssave']);
 Route::get('/sme', [PageController::class, 'sme']);
+Route::post('/sme', [PageController::class, 'smesave']);
 Route::get('/training', [PageController::class, 'training']);
+Route::post('/training', [PageController::class, 'trainingsave']);
 Route::get('/farmers', [PageController::class, 'farmers']);
+Route::post('/farmers', [PageController::class, 'farmerssave']);
 
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'send']);
 

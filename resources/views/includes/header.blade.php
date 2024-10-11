@@ -5,16 +5,16 @@
           <div class="row">
               <div class="col-lg-4 col-md-12 h-topbar-left">
                   <ul class="header-social clearfix">
-                      <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://web.facebook.com/profile.php?id=100087651557657" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                       <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                      {{-- <li><a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a></li> --}}
                       <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                      <li><a href="#" target="_blank"><i class="fab fa-flickr"></i></a></li>
+                      {{-- <li><a href="#" target="_blank"><i class="fab fa-flickr"></i></a></li> --}}
                   </ul>
               </div>
               <div class="col-lg-8 col-md-12 h-topbar-right">
                  <span class="ht-phone"><span class="ht-contact-icon"><i class="fa fa-phone" aria-hidden="true"></i></span> Call Us:<a href="tel:+2347053506951">+2347053506951</a></span>
-                 <span class="ht-email"><span class="ht-contact-icon"><i class="far fa-envelope"></i></span> Email Us: <a href="#"><span class="__cf_email__" data-cfemail="51383f373e11283e24233d383f3a227f323e3c">Camdevspatroit@gmail.com</span></a></span> 
+                 <span class="ht-email"><span class="ht-contact-icon"><i class="far fa-envelope"></i></span> Email Us: <a href="#"><span class="__cf_email__" data-cfemail="51383f373e11283e24233d383f3a227f323e3c">camdevspatroit@gmail.com  | admin@camdevsfoundation.com.ng</span></a></span> 
                  <a class="btn" href="{{url('/login')}}"><i class="fas fa-user"></i> Login</a>
               </div>
           </div>

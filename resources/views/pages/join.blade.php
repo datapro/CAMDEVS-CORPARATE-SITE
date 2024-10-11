@@ -40,8 +40,10 @@
       {{-- </div> --}}
       <div class="row">
        <div class="col-lg-6 mb-5 p-0">
-        <form class="contact-form">
-         <div class="f-field"><label for="">Code number for <strong>MEMBERSHIP</strong> will be sent to your active email address after <strong>Verification</strong></label></div>
+          <form class="contact-form" action="{{url('/join')}}" method="post">
+            @csrf
+            <div class="f-field"><label for="">Code number for <strong>MEMBERSHIP</strong> will be sent to your active email address after <strong>Verification</strong></label></div>
+            <div>@include('inc.messages')</div>
         <div class="f-field"><input name="fname" type="text" required placeholder="First name"></div>
         <div class="f-field"><input name="sname" type="text" required placeholder="Last name"></div>
         <label for="">Age:</label>
@@ -59,8 +61,8 @@
         <label for="">Membership:</label>
          <div class="f-field">
             <select name="membership" id="" class="f-field">
-                <option value="School Leaver">Full Membership</option>
-                <option value="Undergraduate">Volunteer</option>
+                <option value="Full member">Full Membership</option>
+                <option value="Volunteer">Volunteer</option>
                </select>
          </div>
         <div class="f-field"><input name="address" type="text" required placeholder="Address with nearest bus stop"></div>

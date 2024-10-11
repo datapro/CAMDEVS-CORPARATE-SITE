@@ -40,9 +40,11 @@
       {{-- </div> --}}
       <div class="row">
          <div class="col-lg-6 mb-5 p-0">
-            <form class="contact-form">
+            <form class="contact-form" action="{{url('/farmers')}}" method="post">
+               @csrf
              <div class="f-field"><label for="">Code number <strong>MEMBERSHIP is</strong> compulsory  <strong>for submission</strong></label></div>
-            <div class="f-field"><input name="code" type="text" required placeholder="Code number "></div>
+            <div>@include('inc.messages')</div>
+             <div class="f-field"><input name="code" type="text" required placeholder="Code number "></div>
             <div class="f-field"><input name="fname" type="text" required placeholder="First name"></div>
             <div class="f-field"><input name="sname" type="text" required placeholder="Last name"></div>
             <label for="">Age:</label>
@@ -60,8 +62,8 @@
             <label for="">Membership:</label>
              <div class="f-field">
                 <select name="membership" id="" class="f-field">
-                    <option value="School Leaver">Full Membership</option>
-                    <option value="Undergraduate">Volunteer</option>
+                    <option value="Full member">Full Membership</option>
+                    <option value="Volunteer">Volunteer</option>
                    </select>
              </div>
             <div class="f-field"><input name="address" type="text" required placeholder="Address with nearest bus stop"></div>
