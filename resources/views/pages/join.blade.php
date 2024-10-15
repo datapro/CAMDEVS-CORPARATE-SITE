@@ -47,7 +47,7 @@
         <div class="f-field"><input name="fname" type="text" required placeholder="First name"></div>
         <div class="f-field"><input name="sname" type="text" required placeholder="Last name"></div>
         <label for="">Age:</label>
-        <div class="f-field"><input name="age" type="date" required placeholder="Membership code" ></div>
+       <div><input name="age" type="date" required placeholder="Membership code" ></div>
         <div class="f-field"><input name="university" type="text" required placeholder="University Name or school completed"></div>
         <div class="f-field"><input name="nin" type="text" required placeholder="NIN"></div>
         <label for="">Are you a School Leaver , an undergraduate or even a graduate and you believe in

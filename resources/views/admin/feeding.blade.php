@@ -2,51 +2,75 @@
 @section('content')
 @include('layouts.sidebar')
 
-<h1 style="text-align: center">Registered for Feeding</h1>
-<div style="flex:1" class="table-responsive">
-       
-    <table class="table table-striped table-bordered nowrap dataTable " >
-        <thead>
-        <tr>
-        <th class="sorting_asc" >#</th>
-        <th class="sorting_asc" >First Name</th>
-        <th class="sorting_asc" >Last Name</th>
-        <th class="sorting_asc" >Age</th>
-        <th class="sorting_asc" >Tertiary School</th>
-        <th class="sorting_asc" >NIN</th>
-        <th class="sorting_asc" >Membership</th>
-        <th class="sorting_asc" >Address</th>
-        <th class="sorting_asc" >Email</th>
-        <th class="sorting_asc" >LGA</th>
-        <th class="sorting_asc" >State of Residence</th>
-        <th class="sorting_asc" >Local Government of Residence</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td class="even">First Name</td>
-            <td class="even">Last Name</td>
-            <td class="even">Age</td>
-            <td class="even">Tertiary School</td>
-            <td class="even">NIN</td>
-            <td class="even">Code</td>
-            <td class="even">Address</td>
-            <td class="even">Email</td>
-            <td class="even">LGA</td>
-            <td class="even">State of Residence</td>
-            <td class="even">Local Government of Residence</td>
-            <td class="even">
-                <a href="" class="btn btn-success">Edit</a>
-            </td>
-            <td class="even">
-                <!-- Delete Button -->
-                <form action="" method="POST" onsubmit="return confirm('Are you sure you want to delete this user?');">
-                   <button type="submit" class="btn btn-danger">Delete</button>
-               </form>
-               </td>
-        </tr>
-        </tbody>
-        </table>
+<h1 style="text-align: center">Applicant for Feeding</h1>
+<div style="display: flex; justify-content:space-evenly">
+    <div></div>
+    <div>
+        <p class="btn btn-danger">Insert <strong>CODE NUMBER</strong> to search for Applicant</p>
+     <form action="{{url('/feeding')}}" method="get" >
+        <input type="text" name="query" placeholder="Search..." required>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
 </div>
+</div>
+
+<div style="flex:1" class="table-responsive">
+        <div style="text-align: center">@include('inc.messages')</div> 
+        <table class="table table-striped table-bordered nowrap dataTable " >
+            <thead>
+            <tr>
+            <th class="sorting_asc" >#</th>
+            <th class="sorting_asc" >Code</th>
+            <th class="sorting_asc" >First Name</th>
+            <th class="sorting_asc" >Last Name</th>
+            <th class="sorting_asc" >Age</th>
+            <th class="sorting_asc" >Address</th>
+            <th class="sorting_asc" >Tertiary School</th>
+            <th class="sorting_asc" >NIN</th>
+            <th class="sorting_asc" >Education</th>
+            <th class="sorting_asc" >Membership</th>
+            <th class="sorting_asc" >Contact</th>
+            <th class="sorting_asc" >Email</th>
+            <th class="sorting_asc" >State of origin</th>
+            <th class="sorting_asc" >State of Residence</th>
+            <th class="sorting_asc" >Local Government of Residence</th>
+            <th class="sorting_asc" >LGA of origin</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach($feeds as $feed)
+            <tr>
+                <th scope="row">{{$feed->id}}</th>
+                <th scope="row">{{$feed->code}}</th>
+                <td class="even">{{$feed->fname}}</td>
+                <td class="even">{{$feed->sname}}</td>
+                <td class="even">{{$feed->age}}</td>
+                <td class="even">{{$feed->address}}</td>
+                <td class="even">{{$feed->university}}</td>
+                <td class="even">{{$feed->nin}}</td>
+                <td class="even">{{$feed->school}}</td>
+                <td class="even">{{$feed->membership}}</td>
+                <td class="even">{{$feed->phone}}</td>
+                <td class="even">{{$feed->email}}</td>
+                <td class="even">{{$feed->state}}</td>
+                <td class="even">{{$feed->stater}}</td>
+                <td class="even">{{$feed->lga}}</td>
+                <td class="even">{{$feed->lgar}}</td>
+                <td class="even">
+                    <a href="{{ route('edit.feed', $feed->id) }}" class="btn btn-success">Edit</a>
+                </td>
+                <td class="even">
+                        <!-- Delete Button -->
+                <form action="{{ url('/feeding', $feed->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this Member?');">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+                   </td>
+            </tr>
+            @endforeach
+            </tbody>
+            </table>
+    </div>
+ 
 @endsection

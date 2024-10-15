@@ -16,6 +16,17 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+     // Check if the user has a specific role
+     public function hasRole($role)
+     {
+         return $this->role === $role;
+     }
+ 
+     // Check if the user has any role from a list of roles
+     public function hasAnyRole(array $roles)
+     {
+         return in_array($this->role, $roles);
+     }
     protected $fillable = [
         'name',
         'email',

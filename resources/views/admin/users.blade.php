@@ -3,11 +3,8 @@
 @include('layouts.sidebar')
 
 <h1 style="text-align: center">Account users</h1>
-<div style="display: flex">
-    <div style="width:200px">
 
-    </div>
-    <div style="flex:1">
+    <div style="flex:1" class="table-responsive">
         <table class="table table-framed">
             <thead>
             <tr>
@@ -16,6 +13,7 @@
             <th>Username</th>
             <th>Password</th>
             <th>Day Created</th>           
+            <th>User Role</th>           
             </tr>
             </thead>
             <tbody>
@@ -26,6 +24,7 @@
             <td>{{$user->email}}</td>
             <td>{{$user->password}}</td>
             <td>{{ $user->created_at }}</td>
+            <td>{{ $user->role }}</td>
             <td>
              <!-- Delete Button -->
              <form action="{{ url('/users', $user->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this user?');">
@@ -39,8 +38,5 @@
             </tbody>
             </table>
     </div>
-    <div style="width: 200px">
 
-    </div>
-</div>
 @endsection

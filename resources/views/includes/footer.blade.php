@@ -62,7 +62,10 @@
             {{-- <li class="gplus"><a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a></li> --}}
             <li class="linkedin"><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
             <li class="flicker"><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+             <a aria-label="Chat on Whatsapp" href="https://wa.me/+2347053506951"> <img alt="Chat on WhatsApp" src="{{asset('assets/images/what.png')}}" />
+            <a />
           </ul>
+         
         </div>
       </div>
     </div>

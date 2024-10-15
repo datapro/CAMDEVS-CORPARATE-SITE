@@ -6,7 +6,7 @@
      <!-- page heading and breadcrumb -->
   <div class="inner-banner" style="background:url({{asset('assets/images/innerheaderbanner.jpg')}}) no-repeat center center; background-size:cover;">
     <div class="inner-page-heading">
-      <h1 class="page-heading">Scholarship</h1>
+      <h1 class="page-heading">Edit Scholarship Applicant</h1>
       <div class="heading-bg"></div>
     </div>
 </div>
@@ -39,45 +39,46 @@
        {{-- </div>   --}}
       {{-- </div> --}}
       <div class="row">
-         <div class="col-lg-6 mb-5 p-0">
-            <form class="contact-form" action="{{url('/scholars')}}" method="post">
-               @csrf
-             <div class="f-field"><label for="">Code number <strong>MEMBERSHIP is</strong> compulsory  <strong>for submission</strong></label></div>
+       <div class="col-lg-6 mb-5 p-0">
+          <form class="contact-form" action="{{ route('edit.scholarship.updatesh', $sch->id) }}" method="POST"">
+            @csrf
+            @method('PUT')
+            <div class="f-field"><label for="">Code number for <strong>MEMBERSHIP</strong> will be sent to your active email address after <strong>Verification</strong></label></div>
             <div>@include('inc.messages')</div>
-             <div class="f-field"><input name="code" type="text" required placeholder="Code number "></div>
-            <div class="f-field"><input name="fname" type="text" required placeholder="First name"></div>
-            <div class="f-field"><input name="sname" type="text" required placeholder="Last name"></div>
-            <label for="">Age:</label>
-           <div><input name="age" type="date" required placeholder="Membership code" ></div>
-            <div class="f-field"><input name="university" type="text" required placeholder="University Name or school completed"></div>
-            <div class="f-field"><input name="nin" type="text" required placeholder="NIN"></div>
-            <label for="">Are you a School Leaver , an undergraduate or even a graduate and you believe in
-               improving on the democratic ideals by Reawakening the patriot.</label>
-            <div>
-                <select name="school" id="" class="f-field">
-                   <option value="School Leaver">School Leaver</option>
-                   <option value="Undergraduate">Undergraduate</option>
-                </select>
-            </div>
-            <label for="">Membership:</label>
-             <div class="f-field">
-                <select name="membership" id="" class="f-field">
-                    <option value="Full member">Full Membership</option>
-                    <option value="Volunteer">Volunteer</option>
-                   </select>
-             </div>
-            <div class="f-field"><input name="address" type="text" required placeholder="Address with nearest bus stop"></div>
-            <div class="f-field"><input name="email" type="email" required placeholder="Email"></div>
-            <div class="f-field"><input name="phone" type="text" required placeholder="Phone"></div>
-            <div class="f-field"><input name="state" type="text" required placeholder="State of oring"></div>
-            <div class="f-field"><input name="lga" type="text" required placeholder="LGA of origin"></div>
-            <div class="f-field"><input name="stater" type="text" required placeholder="state of residence"></div>
-            <div class="f-field"><input name="lgar" type="text" required placeholder="LGA of residence"></div>
-            <div class="submit-btn"><input name="submit" type="submit" value="submit"></div>
-            </form>
+        <div class="f-field"><input name="code" type="text" required placeholder="First name" value="{{ $sch->code }}" ></div>
+        <div class="f-field"><input name="fname" type="text" required placeholder="First name" value="{{ $sch->fname }}" ></div>
+        <div class="f-field"><input name="sname" type="text" required placeholder="Last name" value="{{ $sch->sname }}"></div>
+        <label for="">Age:</label>
+        <div class="f-field"><input name="age" type="date" required placeholder="Membership code" value="{{ $sch->age }}" ></div>
+        <div class="f-field"><input name="university" type="text" required placeholder="University Name or school completed" value="{{ $sch->university }}"></div>
+        <div class="f-field"><input name="nin" type="text" required placeholder="NIN" value="{{ $sch->nin }}"></div>
+        <label for="">Are you a School Leaver , an undergraduate or even a graduate and you believe in
+           improving on the democratic ideals by Reawakening the patriot.</label>
+        <div>
+            <select name="school" id="" class="f-field" value="{{ $sch->school }}">
+               <option value="School Leaver">School Leaver</option>
+               <option value="Undergraduate">Undergraduate</option>
+            </select>
+        </div>
+        <label for="">Membership:</label>
+         <div class="f-field">
+            <select name="membership" id="" class="f-field" value="{{ $sch->membership }}">
+                <option value="Full member">Full Membership</option>
+                <option value="Volunteer">Volunteer</option>
+               </select>
          </div>
+        <div class="f-field"><input name="address" type="text" required placeholder="Address with nearest bus stop" value="{{ $sch->address }}"></div>
+        <div class="f-field"><input name="email" type="email" required placeholder="Email" value="{{ $sch->email }}"></div>
+        <div class="f-field"><input name="phone" type="text" required placeholder="Phone" value="{{ $sch->phone }}"></div>
+        <div class="f-field"><input name="state" type="text" required placeholder="State of oring" value="{{ $sch->state }}"></div>
+        <div class="f-field"><input name="lga" type="text" required placeholder="LGA of origin" value="{{ $sch->lga }}"></div>
+        <div class="f-field"><input name="stater" type="text" required placeholder="state of residence" value="{{ $sch->stater }}"></div>
+        <div class="f-field"><input name="lgar" type="text" required placeholder="LGA of residence" value="{{ $sch->lgar }}"></div>
+        <div class="submit-btn"><input name="submit" type="submit" value="submit"></div>
+        </form>
+       </div>
        <div class="col-lg-6 p-0">
-        <div class="gmap"><img src="{{asset('assets/images/scholars.jpg')}}"></div>
+        <div class="gmap"><img src="{{asset('assets/images/smallscale.jpg')}}"></div>
        </div>
       </div>
      </div>

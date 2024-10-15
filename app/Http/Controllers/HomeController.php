@@ -15,6 +15,7 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+
     }
 
     /**
@@ -26,6 +27,10 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    // public function member()
+    // {
+    //     return view('admin.dashboard');
+    // }
     public function users()
     {
         // Fetch all users from the database

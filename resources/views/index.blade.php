@@ -6,7 +6,7 @@
   <div class="home_slider owl-carousel">
     <div class="item full_slides" style="background:url({{asset('assets/images/slide1.jpg')}}) no-repeat center center; background-size:cover;">
       <div class="full_slide_caption">
-        <div class="slider-txt-medium">Collective Action Movement for Development and Environmental Issues (CAMDEVS) Foundation </div>
+        <div class="slider-txt-medium">Collective Action Movement for Democratic and Environmental Issues (CAMDEVS) Foundation </div>
         <div class="slider-txt-big">Welcome to <span class="tex-blue">CAMDEVS</span></div>
         <p>Collective Action Movement on democratic values and environmental issues!</p>
         <a class="btn btn-big btn-blue" href="{{url('/about')}}">Learn More!</a>
@@ -14,7 +14,7 @@
     </div>
     <div class="item full_slides" style="background:url({{asset('assets/images/slide2.jpg')}}) no-repeat center center; background-size:cover;">
       <div class="full_slide_caption">
-        <div class="slider-txt-medium">Collective Action Movement for Development and Environmental Issues (CAMDEVS) Foundation </div>
+        <div class="slider-txt-medium">Collective Action Movement for Democratic and Environmental Issues (CAMDEVS) Foundation </div>
         <div class="slider-txt-big">Welcome to <span class="tex-blue">CAMDEVS</span></div>
         <p>Collective Action Movement on democratic values and environmental issues!</p>
         <a class="btn btn-big btn-blue" href="{{url('/about')}}">Learn More!</a>
@@ -22,7 +22,7 @@
     </div>
     <div class="item full_slides" style="background:url({{asset('assets/images/slide3.jpg')}}) no-repeat center center; background-size:cover;">
       <div class="full_slide_caption">
-        <div class="slider-txt-medium">Collective Action Movement for Development and Environmental Issues (CAMDEVS) Foundation </div>
+        <div class="slider-txt-medium">Collective Action Movement for Democratic and Environmental Issues (CAMDEVS) Foundation </div>
         <div class="slider-txt-big">Welcome to <span class="tex-blue">CAMDEVS</span></div>
         <p>Collective Action Movement on democratic values and environmental issues!</p>
         <a class="btn btn-big btn-blue" href="{{url('/about')}}">Learn More!</a>
@@ -30,7 +30,7 @@
     </div>
     <div class="item full_slides" style="background:url({{asset('assets/images/slide4.jpg')}}) no-repeat center center; background-size:cover;">
       <div class="full_slide_caption">
-        <div class="slider-txt-medium">Collective Action Movement for Development and Environmental Issues (CAMDEVS) Foundation </div>
+        <div class="slider-txt-medium">Collective Action Movement for Democratic and Environmental Issues (CAMDEVS) Foundation </div>
         <div class="slider-txt-big">Welcome to <span class="tex-blue">CAMDEVS</span></div>
         <p>Collective Action Movement on democratic values and environmental issues!</p>
         <a class="btn btn-big btn-blue" href="{{url('/about')}}">Learn More!</a>
@@ -38,7 +38,7 @@
     </div>
     <div class="item full_slides" style="background:url({{asset('assets/images/slide5.jpg')}}) no-repeat center center; background-size:cover;">
       <div class="full_slide_caption">
-        <div class="slider-txt-medium">Collective Action Movement for Development and Environmental Issues (CAMDEVS) Foundation </div>
+        <div class="slider-txt-medium">Collective Action Movement for Democratic and Environmental Issues (CAMDEVS) Foundation </div>
         <div class="slider-txt-big">Welcome to <span class="tex-blue">CAMDEVS</span></div>
         <p>Collective Action Movement on democratic values and environmental issues!</p>
         <a class="btn btn-big btn-blue" href="{{url('/about')}}">Learn More!</a>
@@ -66,7 +66,7 @@
                 <h5><a href="#">Agro Allied Farming</a></h5>
                 <p>The agro-allied sector encompasses a wide range of industries that add value to
                   agricultural products, support farmers, and contribute to the overall economy. It plays
-                  a critical role in advancing rural development, promoting industrialization, and ensuring
+                  a critical role in advancing rural Democratic, promoting industrialization, and ensuring
                   food security. By addressing challenges such as infrastructure.</p>
                 {{-- <div class="service-info clearfix">
             <div class="s-infobox"><span>5000</span> Projects</div>
@@ -121,7 +121,7 @@
               <div class="service-content">
                 <h5><a href="#">Feeding Program</a></h5>
                 <p>Feeding programs are vital initiatives that help address hunger, improve nutrition, and support
-                  vulnerable communities. By combining food distribution with other developmental programs such as
+                  vulnerable communities. By combining food distribution with other Democratical programs such as
                   education and health services, feeding programs can have long-term positive impacts on individuals
                   and communities. These initiatives often rely on partnerships, donations, and local involvement to ensure sustainability and effectiveness.</p>
                 {{-- <div class="service-info clearfix">
@@ -140,7 +140,7 @@
               <div class="service-content">
                 <h5><a href="#">Small Scale Business</a></h5>
                 <p>Small-scale businesses are essential to local economies, fostering innovation, job creation, and
-                  community development. Although they face unique challenges, careful planning, efficient operations,
+                  community Democratic. Although they face unique challenges, careful planning, efficient operations,
                   and a focus on customer satisfaction can lead to long-term success. By leveraging local resources,
                   modern technology, and a strong work ethic, small business owners can grow their ventures and make
                   a meaningful impact in their industries.
@@ -162,7 +162,7 @@
                 <h5><a href="#">Become a Certified Member of CAMDEVS</a></h5>
                 <p>Click on this link to become a Certified member of CAMDEVS to be qualify for the above empowerment opportunities.
                   By becoming a member, individuals or businesses gain access to unique opportunities, resources, and a sense of belonging. Each membership comes with its own set of benefits and responsibilities,
-                  fostering personal growth, professional development, and community engagement.
+                  fostering personal growth, professional Democratic, and community engagement.
                 </p>
                 {{-- <div class="service-info clearfix">
             <div class="s-infobox"><span>5000</span> Projects</div>
@@ -309,7 +309,7 @@
                       and best practices to increase productivity and efficiency.
                       Access to new technology: Farmers and businesses are introduced to new technologies
                       (such as improved seeds, pest control methods, and automated equipment) that can boost output.
-                      Entrepreneurial skills: Training on business development, financial management,
+                      Entrepreneurial skills: Training on business Democratic, financial management,
                       and marketing to help people transition from subsistence farming to commercial agriculture.</p>
                   </div>
                 </div>
@@ -327,7 +327,8 @@
                 <div class="accordion_tab">It was popularised in the 1960s with the release of Letraset sheets</div>
                 <div class="accordion_content">
                   <div class="accordion_item">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit quae repellendus provident dolor iure poss imusven am aliquam. Officiis totam ea laborum deser unt vonsess. iure poss imusven am aliquam</p>
+                    <p>To experience a better Nigeria, everyone must get involved in promoting the ideals of patriotism. We must start from our various homes, primary , secondary, and tertiary education and finally to the secular world.
+</p>
                   </div>
                 </div>
               </div>

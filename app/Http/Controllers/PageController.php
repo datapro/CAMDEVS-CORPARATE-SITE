@@ -78,7 +78,6 @@ class PageController extends Controller
     public function joinsave(Request $request){
          // Validate the input
          $validatedData = $request->validate([
-             'code' => 'required|string|max:255',
              'sname' => 'required|string|max:255',
             'fname' => 'required|string|max:255',
             'age' => 'required|string|max:255',
